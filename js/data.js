@@ -229,8 +229,8 @@ const PORTFOLIO_DATA = {
   // Kontak & Sosial Media
   contact: {
     email: "said.edutech@example.com",
-    whatsapp: "+6281234567890",
-    whatsappDisplay: "+62 812-3456-7890",
+    whatsapp: "+6287740193089",
+    whatsappDisplay: "0877 4019 3089",
     telegram: "caknur286",
     github: "https://github.com/caknur286",
     linkedin: "https://linkedin.com",
@@ -245,7 +245,7 @@ const PORTFOLIO_DATA = {
     role: "Spesialisasi: EdTech Product Designer, Gamified Media Creator, and Frontend Enthusiast.",
     skills: "Daftar Skill: HTML5, CSS3, Tailwind CSS, JavaScript (ES6+), React, Interactive Canvas, Figma, Gamifikasi Pembelajaran.",
     projects: "Proyek Aktif: 1. EduQuest LMS | 2. NeonMath Arcade | 3. KisahNusantara 3D | 4. EduMatrix Portal.",
-    contact: "Email: said.edutech@example.com | WA: +62 812-3456-7890 | GitHub: github.com/caknur286 | IG: @caknur_286",
+    contact: "Email: said.edutech@example.com | WA: 0877 4019 3089 | GitHub: github.com/caknur286 | IG: @caknur_286",
     matrix: "Wake up, Neo... Dunia pendidikan masa depan sedang dibangun di depan matamu. 🚀",
     quote: "\"Pendidikan bukan hanya mengisi wadah, melainkan menyalakan api rasa ingin tahu.\" — William Butler Yeats"
   }
