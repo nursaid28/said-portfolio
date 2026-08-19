@@ -140,49 +140,113 @@
   <section id="hero" class="min-h-screen pt-32 pb-20 flex items-center relative z-10">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full">
       
-      <!-- Status Badge -->
-      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono tracking-wider mb-6 backdrop-blur-md shadow-[0_0_20px_rgba(0,240,255,0.15)] reveal-on-scroll">
-        <span class="live-indicator"></span>
-        <span id="status-badge-text">OPEN FOR EDTECH COLLABORATION & PROJECTS</span>
-      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center mb-12">
+        
+        <!-- Left Column: Hero Text & Call-To-Action -->
+        <div class="lg:col-span-7 reveal-on-scroll">
+          
+          <!-- Status Badge -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono tracking-wider mb-6 backdrop-blur-md shadow-[0_0_20px_rgba(0,240,255,0.15)]">
+            <span class="live-indicator"></span>
+            <span id="status-badge-text">OPEN FOR EDTECH COLLABORATION & PROJECTS</span>
+          </div>
 
-      <!-- Main Headline & Hologram Title -->
-      <div class="max-w-4xl reveal-on-scroll">
-        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-orbitron font-extrabold text-white tracking-tight mb-4 leading-none">
-          HI, SAYA <span id="hero-name" class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 text-glow-cyan">ARYA DHARMAWAN</span>
-        </h1>
+          <!-- Main Headline -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-orbitron font-extrabold text-white tracking-tight mb-4 leading-tight">
+            HI, SAYA <span id="hero-name" class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 text-glow-cyan">MUKHLISIN NUR SAID</span>
+          </h1>
 
-        <!-- Animated Typewriter Subtitle -->
-        <div class="h-10 sm:h-12 flex items-center text-lg sm:text-2xl font-rajdhani font-bold text-cyan-300 mb-6">
-          <span class="text-purple-400 mr-2">></span>
-          <span id="typewriter-text"></span>
-          <span class="terminal-prompt-cursor"></span>
+          <!-- Animated Typewriter Subtitle -->
+          <div class="h-10 sm:h-12 flex items-center text-lg sm:text-2xl font-rajdhani font-bold text-cyan-300 mb-6">
+            <span class="text-purple-400 mr-2">></span>
+            <span id="typewriter-text"></span>
+            <span class="terminal-prompt-cursor"></span>
+          </div>
+
+          <!-- Short Description -->
+          <p id="hero-bio" class="text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed mb-8">
+            Mahasiswa Pendidikan Guru Sekolah Dasar (PGSD) di Universitas Muhammadiyah OKU Timur yang antusias dalam merancang media pembelajaran interaktif, gamifikasi edukasi, dan antarmuka web modern.
+          </p>
+
+          <!-- CTA Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3.5">
+            <a href="#projects" class="btn-cyber-primary">
+              <span>Jelajahi Proyek</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#terminal" class="btn-cyber-outline">
+              <i data-lucide="terminal" class="w-4 h-4"></i>
+              <span>Konsol CLI</span>
+            </a>
+            <a href="#contact" class="btn-cyber-outline btn-cyber-purple">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              <span>Kontak</span>
+            </a>
+          </div>
         </div>
 
-        <!-- Short Description -->
-        <p id="hero-bio" class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed mb-8">
-          Mahasiswa Pendidikan Guru Sekolah Dasar (PGSD) yang memadukan dunia pedagogi dengan sentuhan teknologi modern, gamifikasi, dan antarmuka web futuristik.
-        </p>
+        <!-- Right Column: Holographic Cyber Avatar Display -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-end reveal-on-scroll">
+          <div class="avatar-hologram-wrapper relative w-full max-w-[320px] sm:max-w-[360px]">
+            
+            <!-- Ambient Glowing Aura -->
+            <div class="avatar-aura-glow"></div>
 
-        <!-- CTA Action Buttons -->
-        <div class="flex flex-wrap items-center gap-4 mb-16">
-          <a href="#projects" class="btn-cyber-primary">
-            <span>Jelajahi Proyek EdTech</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-          <a href="#terminal" class="btn-cyber-outline">
-            <i data-lucide="terminal" class="w-4 h-4"></i>
-            <span>Buka Konsol Interaktif</span>
-          </a>
-          <a href="#contact" class="btn-cyber-outline btn-cyber-purple">
-            <i data-lucide="mail" class="w-4 h-4"></i>
-            <span>Mari Berkolaborasi</span>
-          </a>
+            <!-- Cyber Hologram Card Frame -->
+            <div class="cyber-glass relative p-3 sm:p-4 rounded-3xl border border-cyan-500/40 shadow-[0_0_40px_rgba(0,240,255,0.25)] overflow-hidden">
+              
+              <!-- HUD Tech Corners -->
+              <div class="hud-corner-tl"></div>
+              <div class="hud-corner-tr"></div>
+              <div class="hud-corner-bl"></div>
+              <div class="hud-corner-br"></div>
+
+              <!-- Animated Scanline Glow -->
+              <div class="scanline-overlay"></div>
+
+              <!-- Top Status Bar Inside Card -->
+              <div class="flex items-center justify-between px-3 py-1.5 mb-2 border-b border-slate-800 text-[10px] font-mono text-cyan-400">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>ID: SAID_PGSD_286</span>
+                </div>
+                <span class="text-purple-400">SYS_VERIFIED</span>
+              </div>
+
+              <!-- Image Canvas Frame with Dark Cyber Gradient Background -->
+              <div class="relative rounded-2xl overflow-hidden bg-gradient-to-b from-cyan-950/30 via-slate-900/90 to-slate-950 border border-cyan-500/20 flex items-center justify-center pt-4">
+                <img 
+                  id="hero-avatar-img"
+                  src="aset/MUKHLISIN_NUR_SAID.png" 
+                  alt="Mukhlisin Nur Said" 
+                  class="w-full h-auto object-contain max-h-[360px] drop-shadow-[0_10px_25px_rgba(0,240,255,0.35)] transition-transform duration-500 hover:scale-105"
+                  loading="eager"
+                />
+                
+                <!-- Subtle Gradient Fade at Bottom -->
+                <div class="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+              </div>
+
+              <!-- Floating Tech Badges on Avatar -->
+              <div class="mt-3 flex items-center justify-between gap-2 px-1">
+                <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-[11px] font-mono text-cyan-300">
+                  <i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-cyan-400"></i>
+                  <span>PGSD UM OKUT</span>
+                </div>
+                <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-purple-500/10 border border-purple-500/30 text-[11px] font-mono text-purple-300">
+                  <i data-lucide="code" class="w-3.5 h-3.5 text-purple-400"></i>
+                  <span>EDTECH DEV</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
+
       </div>
 
       <!-- Stats Grid -->
-      <div id="hero-stats-container" class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl reveal-on-scroll">
+      <div id="hero-stats-container" class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl reveal-on-scroll">
         <!-- Injected via main.js -->
       </div>
     </div>

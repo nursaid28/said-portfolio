@@ -474,3 +474,91 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ===================================================================
+ * Holographic Avatar Frame & HUD Elements
+ * =================================================================== */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes scanline-pass {
+  0% { transform: translateY(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(600%); opacity: 0; }
+}
+
+@keyframes pulse-ring {
+  0%, 100% { transform: scale(0.96); opacity: 0.75; }
+  50% { transform: scale(1.04); opacity: 0.35; }
+}
+
+.avatar-hologram-wrapper {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+.scanline-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 25%;
+  background: linear-gradient(180deg, transparent, rgba(0, 240, 255, 0.2), transparent);
+  pointer-events: none;
+  animation: scanline-pass 4.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.hud-corner-tl {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid var(--neon-cyan);
+  border-left: 2px solid var(--neon-cyan);
+  pointer-events: none;
+}
+
+.hud-corner-tr {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid var(--neon-cyan);
+  border-right: 2px solid var(--neon-cyan);
+  pointer-events: none;
+}
+
+.hud-corner-bl {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 2px solid var(--neon-purple);
+  border-left: 2px solid var(--neon-purple);
+  pointer-events: none;
+}
+
+.hud-corner-br {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 2px solid var(--neon-purple);
+  border-right: 2px solid var(--neon-purple);
+  pointer-events: none;
+}
+
+.avatar-aura-glow {
+  position: absolute;
+  inset: -15px;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.3) 0%, rgba(176, 38, 255, 0.25) 45%, transparent 70%);
+  filter: blur(28px);
+  z-index: -1;
+  border-radius: 28px;
+  animation: pulse-ring 4s ease-in-out infinite;
+}

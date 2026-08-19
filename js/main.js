@@ -47,6 +47,9 @@ function initProfileData() {
   const statusBadge = document.getElementById('status-badge-text');
   if (statusBadge) statusBadge.textContent = p.statusBadge;
 
+  const heroAvatar = document.getElementById('hero-avatar-img');
+  if (heroAvatar && p.avatar) heroAvatar.src = p.avatar;
+
   // Stats Counter
   const statsContainer = document.getElementById('hero-stats-container');
   if (statsContainer && p.stats) {

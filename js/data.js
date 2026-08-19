@@ -17,7 +17,7 @@ const PORTFOLIO_DATA = {
     shortBio: "Mahasiswa Pendidikan Guru Sekolah Dasar (PGSD) di Universitas Muhammadiyah OKU Timur yang antusias dalam merancang media pembelajaran interaktif, gamifikasi edukasi, dan antarmuka web modern.",
     location: "Belitang, OKU Timur, Indonesia",
     statusBadge: "OPEN FOR EDTECH COLLABORATION & PROJECTS",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop", // placeholder avatar futuristik
+    avatar: "aset/MUKHLISIN_NUR_SAID.png",
     cvDownloadUrl: "#", // ganti dengan link download CV Anda jika ada
     stats: [
       { label: "Interactive EdTech Projects", value: "12+", suffix: "" },
